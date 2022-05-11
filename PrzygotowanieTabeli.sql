@@ -1,4 +1,14 @@
-/* Stworzenie tabeli Users */
+/* Stworzenie tabeli Users na https://sqliteonline.com/ 
+Wybieramy MS SQL i klikamy Click to connect*/
+
+/* Opis kroków:
+CREATE TABLE - tworzymy tabelę o nazwie'Users'
+Nazwy kolumn: Id, LastName, FirstName, Age, Country
+INT - liczby całkowite
+VARCHAR - wartość typu 'Tekst' (max. 255 znaków)
+IDENTITY(1,1) - auto inkrementalny identyfikator (od 1, co 1)
+PRIMARY KEY - indywidualny identyfikator użytkownika
+NOT NULL - pole nie może być puste*/
 
 CREATE TABLE Users (
     Id int IDENTITY(1,1) PRIMARY KEY,
